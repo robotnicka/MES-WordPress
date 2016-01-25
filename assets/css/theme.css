@@ -989,6 +989,10 @@ object {
 	font: 700 0.8rem "Lucida Sans Unicode", "Lucida Sans", sans-serif;
 }
 
+.error-404 .widget {
+	margin-top: 1.5rem;
+}
+
 .widget select {
 	width: 100%;
 }

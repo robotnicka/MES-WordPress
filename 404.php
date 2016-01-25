@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<main id="main" class="content__site" role="main">
+<main id="main" class="content__main" role="main">
 
 	<section class="error-404 not-found">
 		<header class="page__header">
@@ -20,14 +20,6 @@ get_header(); ?>
 			<?php get_search_form(); ?>
 
 			<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
-			<?php
-				/* translators: %1$s: smiley */
-				$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'mindseyesociety' ), convert_smilies( ':)' ) ) . '</p>';
-				the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-			?>
-
-			<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
 
 		</div><!-- .page__content -->
 	</section><!-- .error-404 -->
